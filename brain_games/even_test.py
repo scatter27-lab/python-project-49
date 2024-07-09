@@ -2,12 +2,14 @@
 # coding: utf-8
 import prompt
 from random import randint
+from brain_games.greeting import greet
 
 
 def even():
-    print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print('Hello, ', name + '!')
+    name = greet()
+    # print("Welcome to the Brain Games!")
+    # name = prompt.string('May I have your name? ')
+    # print('Hello, ', name + '!')
     print('Answer "yes" if the number is even, otherwise answer "no".')
     i = 0
     while i < 3:
