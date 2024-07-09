@@ -21,12 +21,13 @@ def calc():
                 return True
             except ValueError:
                 return False
+
         if is_number(user_answer) is True:
             if int(user_answer) == int(result):
                 print('Correct!')
             else:
-                print(f""""'{user_answer}' is wrong answer ;(. Correct answer was
-                '{result}'.\nLet's try again, {name}!""")
+                print(f"'{user_answer}' is wrong answer ;(. Correct answer was "
+                      f"'{result}'.\nLet's try again, {name}!")
                 break
         else:
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was "
