@@ -1,13 +1,19 @@
 #!/usr/bin/env python3
-from random import randint, choice
 from brain_games.greeting import greet
+from random import randint
 import prompt
 
 
-def calc():
+def gcd():
     name = greet()
-    print('What is the result of the expression?')
-    operations = '+-*'
+    print('Find the greatest common divisor of given numbers.')
+
+    def find_gcd(list_of_numbers):
+        list_of_numbers.sort()
+        while list_of_numbers[0] != 0:
+            list_of_numbers[1] = list_of_numbers[1] % list_of_numbers[0]
+            list_of_numbers.sort()
+        return list_of_numbers[1]
 
     def is_number(symbols):
         try:
@@ -18,9 +24,9 @@ def calc():
 
     i = 0
     while i < 3:
-        procedure = f"{str(randint(1, 100))} {choice(operations)} {str(randint(1, 100))}"
-        result = eval(procedure)
-        print('Question: ', procedure)
+        random_numbers: list = [randint(1, 100), randint(1, 100)]
+        print('Question: ', random_numbers[0], random_numbers[1])
+        result = find_gcd(random_numbers)
         user_answer = prompt.string('Your answer: ')
         if is_number(user_answer) is True:
             if int(user_answer) == int(result):
@@ -39,7 +45,7 @@ def calc():
 
 
 def main():
-    calc()
+    gcd()
 
 
 if __name__ == '__main__':
