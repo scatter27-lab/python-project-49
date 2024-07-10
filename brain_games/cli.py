@@ -6,7 +6,7 @@ def welcome_user():
     while name == '':
         print('May I have your name? ', end='')
         name = input()
-    print('Hello, ', name)
+    print('Hello,', name)
 
 
 def main():
