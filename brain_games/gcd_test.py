@@ -15,26 +15,14 @@ def gcd():
             list_of_numbers.sort()
         return list_of_numbers[1]
 
-    def is_number(symbols):
-        try:
-            int(symbols)
-            return True
-        except ValueError:
-            return False
-
     i = 0
     while i < 3:
         random_numbers: list = [randint(1, 100), randint(1, 100)]
         print('Question: ', random_numbers[0], random_numbers[1])
         result = find_gcd(random_numbers)
         user_answer = prompt.string('Your answer: ')
-        if is_number(user_answer) is True:
-            if int(user_answer) == int(result):
-                print('Correct!')
-            else:
-                print(f"'{user_answer}' is wrong answer ;(. Correct answer was "
-                      f"'{result}'.\nLet's try again, {name}!")
-                break
+        if user_answer == str(result):
+            print('Correct!')
         else:
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was "
                   f"'{result}'.\nLet's try again, {name}!")

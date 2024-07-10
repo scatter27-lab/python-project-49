@@ -8,27 +8,17 @@ def calc():
     name = greet()
     print('What is the result of the expression?')
     operations = '+-*'
-
-    def is_number(symbols):
-        try:
-            int(symbols)
-            return True
-        except ValueError:
-            return False
+    quantity_of_question = 3
 
     i = 0
-    while i < 3:
-        procedure = f"{str(randint(1, 100))} {choice(operations)} {str(randint(1, 100))}"
+    while i < quantity_of_question:
+        procedure = (f"{str(randint(1, 100))} {choice(operations)} "
+                     f"{str(randint(1, 100))}")
         result = eval(procedure)
         print('Question: ', procedure)
         user_answer = prompt.string('Your answer: ')
-        if is_number(user_answer) is True:
-            if int(user_answer) == int(result):
-                print('Correct!')
-            else:
-                print(f"'{user_answer}' is wrong answer ;(. Correct answer was "
-                      f"'{result}'.\nLet's try again, {name}!")
-                break
+        if user_answer == str(result):
+            print('Correct!')
         else:
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was "
                   f"'{result}'.\nLet's try again, {name}!")
