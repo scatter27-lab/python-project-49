@@ -18,7 +18,7 @@ def gcd():
     i = 0
     while i < 3:
         random_numbers: list = [randint(1, 100), randint(1, 100)]
-        print('Question: ', random_numbers[0], random_numbers[1])
+        print('Question:', random_numbers[0], random_numbers[1])
         result = find_gcd(random_numbers)
         user_answer = prompt.string('Your answer: ')
         if user_answer == str(result):

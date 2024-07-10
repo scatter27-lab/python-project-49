@@ -15,7 +15,7 @@ def calc():
         procedure = (f"{str(randint(1, 100))} {choice(operations)} "
                      f"{str(randint(1, 100))}")
         result = eval(procedure)
-        print('Question: ', procedure)
+        print('Question:', procedure)
         user_answer = prompt.string('Your answer: ')
         if user_answer == str(result):
             print('Correct!')

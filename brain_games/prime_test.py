@@ -29,7 +29,7 @@ def prime():
     i = 0
     while i < quantity_of_question:
         question_and_result = is_prime()
-        print('Question: ', question_and_result[0])
+        print('Question:', question_and_result[0])
         result = question_and_result[1]
         user_answer = prompt.string('Your answer: ')
         if user_answer == result:
