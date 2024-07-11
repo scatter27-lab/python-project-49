@@ -19,6 +19,9 @@ brain-progression:
 brain-prime:
 	poetry run brain-prime
 
+flake8:
+	poetry run flake8
+
 build:
 	poetry build
 
