@@ -9,21 +9,19 @@ def prime():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     quantity_of_question = 3
 
+    # flake8: noqa: C901
     def is_prime():
         number = randint(1, 10000)
         correct_answer = ''
-        if number > 1:
-            if number % 2 == 0:
-                correct_answer = 'no'
-            else:
-                for n in range(3, int(number ** 0.5) + 1, 2):
-                    if number % n == 0:
-                        correct_answer = 'no'
-                        break
-                    else:
-                        correct_answer = 'yes'
-        else:
+        if number == 1 or number % 2 == 0:
             correct_answer = 'no'
+        else:
+            for n in range(3, int(number ** 0.5) + 1, 2):
+                if number % n == 0:
+                    correct_answer = 'no'
+                    break
+                else:
+                    correct_answer = 'yes'
         return number, correct_answer
 
     i = 0
@@ -39,7 +37,7 @@ def prime():
                   f"'{result}'.\nLet's try again, {name}!")
             break
         i += 1
-    if i == 3:
+    if i == quantity_of_question:
         print('Congratulations,', name + '!')
 
 
