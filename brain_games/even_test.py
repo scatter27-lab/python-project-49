@@ -8,23 +8,28 @@ from brain_games.greeting import greet
 def even():
     name = greet()
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    i = 0
-    while i < 3:
+    quantity_of_question = 3
+
+    def is_even():
         random_number = randint(1, 1000)
-        print('Question:', random_number)
-        answer = prompt.string('Your answer: ')
         if random_number % 2 == 0:
-            even_mod = 'yes'
+            correct_answer = 'yes'
         else:
-            even_mod = 'no'
-        if answer == even_mod:
+            correct_answer = 'no'
+        return random_number, correct_answer
+    i = 0
+    while i < quantity_of_question:
+        (question, result) = is_even()
+        print('Question:', question)
+        answer = prompt.string('Your answer: ')
+        if answer == result:
             print('Correct!')
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was "
-                  f"'{even_mod}'.\nLet's try again, {name}!")
+                  f"'{result}'.\nLet's try again, {name}!")
             break
         i += 1
-    if i == 3:
+    if i == quantity_of_question:
         print('Congratulations,', name + '!')
 
 
