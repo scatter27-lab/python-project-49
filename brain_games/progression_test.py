@@ -24,7 +24,7 @@ def arithmetic_progression():
     i = 0
     while i < quantity_of_question:
         progression_and_result = make_progression()
-        print('Question:', progression_and_result[0])
+        print('Question:', str(progression_and_result[0]))
         result = progression_and_result[1]
         user_answer = prompt.string('Your answer: ')
         if user_answer == str(result):
