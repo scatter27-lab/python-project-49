@@ -12,11 +12,14 @@ def even():
 
     def is_even():
         random_number = randint(1, 1000)
-        if random_number % 2 == 0:
-            correct_answer = 'yes'
-        else:
-            correct_answer = 'no'
+        correct_answer = ''
+        match random_number % 2:
+            case 0:
+                correct_answer = 'yes'
+            case 1:
+                correct_answer = 'no'
         return random_number, correct_answer
+
     i = 0
     while i < quantity_of_question:
         (question, result) = is_even()
