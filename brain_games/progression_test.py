@@ -12,7 +12,7 @@ def arithmetic_progression():
     def make_progression():
         prog_len = randint(5, 15)
         progression = [randint(0, 100)]
-        hidden_position = randint(0, prog_len + 1)
+        hidden_position = randint(0, prog_len)
         difference = randint(1, 20)
         for n in range(1, prog_len + 1):
             add = progression[n - 1] + difference
