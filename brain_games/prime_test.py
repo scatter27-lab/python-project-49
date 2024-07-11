@@ -17,11 +17,13 @@ def prime():
             correct_answer = 'no'
         else:
             for n in range(3, int(number ** 0.5) + 1, 2):
-                if number % n == 0:
-                    correct_answer = 'no'
-                    break
-                else:
-                    correct_answer = 'yes'
+                even = number % n
+                match even:
+                    case 0:
+                        correct_answer = 'no'
+                        break
+                    case 1:
+                        correct_answer = 'yes'
         return number, correct_answer
 
     i = 0
