@@ -14,7 +14,7 @@ def make_progression():
         progression.append(add)
     correct_answer = progression[hidden_position]
     progression[hidden_position] = '..'
-    return progression, correct_answer
+    return ' '.join(map(str, progression)), correct_answer
 
 
 def start_arithmetic_progression():
