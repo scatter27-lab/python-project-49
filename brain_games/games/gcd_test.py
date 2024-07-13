@@ -10,7 +10,7 @@ def find_gcd():
     while list_of_numbers[0] != 0:
         list_of_numbers[1] %= list_of_numbers[0]
         list_of_numbers.sort()
-    return random_numbers, list_of_numbers[1]
+    return ' '.join(map(str, random_numbers)), list_of_numbers[1]
 
 
 def start_gcd():
