@@ -14,8 +14,7 @@ def find_gcd():
 
 
 def start_gcd():
-    name = greet()
-    print(RULES_GCD)
+    name = greet(RULES_GCD)
     i = 0
     while i < QUANTITY_OF_QUESTION:
         if not engine(find_gcd(), name):
