@@ -16,8 +16,7 @@ def is_even():
 
 
 def start_even():
-    name = greet()
-    print(RULES_EVEN)
+    name = greet(RULES_EVEN)
     i = 0
     while i < QUANTITY_OF_QUESTION:
         if not engine(is_even(), name):
