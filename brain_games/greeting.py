@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import prompt
 
 
@@ -8,11 +7,3 @@ def greet(rules=''):
     print('Hello,', name + '!')
     print(rules)
     return name
-
-
-def main():
-    greet()
-
-
-if __name__ == '__main__':
-    main()
