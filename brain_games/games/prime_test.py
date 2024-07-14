@@ -22,8 +22,7 @@ def is_prime():
 
 
 def start_prime():
-    name = greet()
-    print(RULES_PRIME)
+    name = greet(RULES_PRIME)
     i = 0
     while i < QUANTITY_OF_QUESTION:
         if not engine(is_prime(), name):

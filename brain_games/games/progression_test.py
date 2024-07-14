@@ -18,8 +18,7 @@ def make_progression():
 
 
 def start_arithmetic_progression():
-    name = greet()
-    print(RULES_PROGRESSION)
+    name = greet(RULES_PROGRESSION)
     i = 0
     while i < QUANTITY_OF_QUESTION:
         if not engine(make_progression(), name):
