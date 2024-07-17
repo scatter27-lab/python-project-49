@@ -1,7 +1,7 @@
 import prompt
 
 
-def engine(get_question_and_answer, RULES, ROUNDS_NUMBER):
+def run_game(get_question_and_answer, RULES, ROUNDS_NUMBER):
     name = prompt.string('Welcome to the Brain Games!\nMay I have your name? ')
     print(f'Hello, {name}! \n{RULES}')
     for _ in range(ROUNDS_NUMBER):
@@ -11,7 +11,7 @@ def engine(get_question_and_answer, RULES, ROUNDS_NUMBER):
         if user_answer == result:
             print('Correct!')
         else:
-            print(f"'{user_answer}' is wrong answer ;(."
+            print(f"'{user_answer}' is wrong answer ;(. "
                   f"Correct answer was '{result}'.\nLet's try again, {name}!")
             return True
-    print('Congratulations,', name + '!')
+    print(f'Congratulations, {name}!')

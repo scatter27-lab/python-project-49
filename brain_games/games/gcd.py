@@ -1,5 +1,5 @@
 from brain_games.const import RULES_GCD, ROUNDS_NUMBER
-from brain_games.engine import engine
+from brain_games.engine import run_game
 from random import randint
 
 
@@ -13,4 +13,4 @@ def question_and_result():
 
 
 def run_gcd_game():
-    engine(question_and_result, RULES_GCD, ROUNDS_NUMBER)
+    run_game(question_and_result, RULES_GCD, ROUNDS_NUMBER)

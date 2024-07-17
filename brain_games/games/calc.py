@@ -1,6 +1,6 @@
 from random import randint, choice
 from brain_games.const import RULES_CALC, ROUNDS_NUMBER
-from brain_games.engine import engine
+from brain_games.engine import run_game
 
 
 def question_and_result():
@@ -12,4 +12,4 @@ def question_and_result():
 
 
 def run_calc_game():
-    engine(question_and_result, RULES_CALC, ROUNDS_NUMBER)
+    run_game(question_and_result, RULES_CALC, ROUNDS_NUMBER)
