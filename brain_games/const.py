@@ -3,4 +3,4 @@ RULES_EVEN = 'Answer "yes" if the number is even, otherwise answer "no".'
 RULES_GCD = 'Find the greatest common divisor of given numbers.'
 RULES_PRIME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 RULES_PROGRESSION = 'What number is missing in the progression?'
-QUANTITY_OF_QUESTION = 3
+ROUNDS_NUMBER = 3

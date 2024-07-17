@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-# coding: utf-8
-from brain_games.games.even_test import start_even, is_even
+from brain_games.games.even import run_even_game
 
 
 def main():
-    start_even()
-    is_even()
+    run_even_game()
 
 
 if __name__ == '__main__':

@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.games.progression_test \
-    import start_arithmetic_progression, make_progression
+from brain_games.games.progression \
+    import run_progression_game
 
 
 def main():
-    start_arithmetic_progression()
-    make_progression()
+    run_progression_game()
 
 
 if __name__ == '__main__':
