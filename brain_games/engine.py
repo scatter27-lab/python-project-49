@@ -11,7 +11,7 @@ def engine(get_question_and_answer, RULES, ROUNDS_NUMBER):
         if user_answer == result:
             print('Correct!')
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{result}'."
-                  f"\nLet's try again, {name}!")
+            print(f"'{user_answer}' is wrong answer ;(."
+                  f"Correct answer was '{result}'.\nLet's try again, {name}!")
             return True
     print('Congratulations,', name + '!')
