@@ -17,6 +17,8 @@ def question_and_result():
                 break
             case 1:
                 result = 'yes'
+            case _:
+                result = 'yes'
     return question, str(result)
 
 
