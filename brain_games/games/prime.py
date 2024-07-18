@@ -8,6 +8,7 @@ def question_and_result():
     result = ''
     if question == 1 or question % 2 == 0:
         result = 'no'
+        return question, str(result)
     for n in range(3, int(question ** 0.5) + 1, 2):
         even = question % n
         match even:

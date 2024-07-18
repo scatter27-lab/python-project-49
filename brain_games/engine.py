@@ -13,5 +13,5 @@ def run_game(get_question_and_answer, RULES, ROUNDS_NUMBER):
         else:
             print(f"'{user_answer}' is wrong answer ;(. "
                   f"Correct answer was '{result}'.\nLet's try again, {name}!")
-            return True
+            return False
     print(f'Congratulations, {name}!')
