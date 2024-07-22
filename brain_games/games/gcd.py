@@ -1,16 +1,14 @@
-from brain_games.const import RULES_GCD, ROUNDS_NUMBER
+from brain_games.const import RULES_GCD
 from brain_games.engine import run_game
+from math import gcd
 from random import randint
 
 
 def question_and_result():
     random_numbers = [randint(1, 100), randint(1, 100)]
-    list_of_numbers = [min(random_numbers), max(random_numbers)]
-    while list_of_numbers[0] != 0:
-        list_of_numbers[1] %= list_of_numbers[0]
-        list_of_numbers.sort()
-    return ' '.join(map(str, random_numbers)), str(list_of_numbers[1])
+    result = gcd(*random_numbers)
+    return ' '.join(map(str, random_numbers)), str(result)
 
 
 def run_gcd_game():
-    run_game(question_and_result, RULES_GCD, ROUNDS_NUMBER)
+    run_game(question_and_result, RULES_GCD)
