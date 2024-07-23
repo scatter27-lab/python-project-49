@@ -7,8 +7,8 @@ def question_and_answer():
     progression = [randint(0, 100)]
     hidden_position = randint(0, PROGRESSION_LENGTH - 1)
     step_of_progression = randint(1, 25)
-    progression = list(range(progression[0], progression[0] +
-                             (step_of_progression * PROGRESSION_LENGTH),
+    progression = list(range(progression[0], progression[0]
+                             + (step_of_progression * PROGRESSION_LENGTH),
                              step_of_progression))
     answer = progression[hidden_position]
     progression[hidden_position] = '..'
