@@ -1,4 +1,5 @@
-from brain_games.utils import choice, get_random_number
+from brain_games.utils import get_random_number
+from random import choice
 from brain_games.const import RULES_CALC
 from brain_games.engine import run_game
 
