@@ -1,19 +1,19 @@
 from brain_games.engine import run_game
 from brain_games.const import RULES_PRIME
-from brain_games.utils import randint
+from brain_games.utils import get_random_number
 
 
 def is_prime(number):
-    if number == 1 or number % 2 == 0:
+    if number < 2:
         return False
-    for n in range(3, int(number ** 0.5) + 1, 2):
+    for n in range(2, int(number ** 0.5) + 1):
         if number % n == 0:
             return False
     return True
 
 
 def question_and_result():
-    question = randint(1, 10000)
+    question = get_random_number()
     result = 'yes' if is_prime(question) else 'no'
     return question, str(result)
 

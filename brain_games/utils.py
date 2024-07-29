@@ -1,2 +1,5 @@
 from random import randint, choice
-__all__ = ['randint', 'choice']
+
+
+def get_random_number():
+    return randint(1, 100)
