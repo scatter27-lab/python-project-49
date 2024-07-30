@@ -48,7 +48,7 @@ If you lose, you can try again.
 
 ### Contributing
 
-How can I help develop a project? Submit a pull request :)
+How can I help develop a project? Submit a pull request.
 
 ##### Now your make to play this games.
 
