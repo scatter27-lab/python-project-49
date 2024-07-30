@@ -21,10 +21,10 @@ If you lose, you can try again.
 
 | Tools  | Version |
 |:------:|:-------:|
-| python |  3.11   |
-| poetry |  1.6.1  |
+| python | 3.12.3  |
+| poetry |  1.8.3  |
 | prompt |  0.4.1  |
-| flake8 |  6.1.0  |
+| flake8 |  7.1.0  |
 
 ### To get started, you need to perform the following operations:
 
@@ -40,28 +40,24 @@ If you lose, you can try again.
 
 |  №   |         Command          | 
 |:----:|:------------------------:| 
-|  1   |    ` make brain-even`    |
-|  2   |    ` make brain-calc`    |
-|  3   |    ` make brain-gcd`     |
+|  1   |    `make brain-even`     |
+|  2   |    `make brain-calc`     |
+|  3   |     `make brain-gcd`     |
 |  4   | `make brain-progression` |
 |  5   |    `make brain-prime`    |      
 
-### Contributing
-
-How can I help develop a project? Submit a pull request.
-
 ##### Now your make to play this games.
 
-|  №   |       Command        |                      Description                       |
-|:----:|:--------------------:|:------------------------------------------------------:|
-|  1   |    ` brain-even`     | You need to determine whether a number is even or not. |
-|  2   |    ` brain-calc`     |             You need to solve an example.              |
-|  3   |     ` brain-gcd`     |      You need to determine the greatest divisor.       |
-|  4   | ` brain-progression` |       You need to continue arithmetic progress.        |
-|  5   |    ` brain-prime`    |         You need to determine a prime number.          |
+|  №   |       Command       |                      Description                       |
+|:----:|:-------------------:|:------------------------------------------------------:|
+|  1   |    `brain-even`     | You need to determine whether a number is even or not. |
+|  2   |    `brain-calc`     |             You need to solve an example.              |
+|  3   |     `brain-gcd`     |      You need to determine the greatest divisor.       |
+|  4   | `brain-progression` |       You need to continue arithmetic progress.        |
+|  5   |    `brain-prime`    |         You need to determine a prime number.          |
 
 # How it's work
-To install the package, run the command: ` make package-install`
+To install the package, run the command: `make package-install`
 
 To run the utility in development mode, run the command:
 
